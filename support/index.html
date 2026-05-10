@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PinMap Support</title>
+  <meta name="description" content="PinMap 技术支持 / Support">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --panel: rgba(255, 252, 246, 0.94);
+      --text: #1f2933;
+      --muted: #5f6c76;
+      --line: rgba(31, 41, 51, 0.12);
+      --accent: #0d6b6b;
+      --accent-soft: rgba(13, 107, 107, 0.1);
+      --shadow: 0 24px 80px rgba(31, 41, 51, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(13, 107, 107, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(217, 119, 6, 0.16), transparent 24%),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .hero,
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+    }
+
+    .summary {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 28px;
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .callout {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(13, 107, 107, 0.1), rgba(255, 255, 255, 0.8));
+      border: 1px solid rgba(13, 107, 107, 0.14);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.68);
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 18px 20px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+        padding-bottom: 28px;
+      }
+
+      .hero,
+      .section {
+        border-radius: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">PinMap Support</div>
+      <h1>技术支持<br>Support</h1>
+      <p class="summary">
+        PinMap 是一款帮助你记录地点、回忆和媒体附件的地图工具。如果你在使用过程中遇到问题，可以通过本页找到联系信息和常见支持内容。
+      </p>
+      <div class="meta">
+        <span>App: PinMap</span>
+        <span>Contact: casual2464@163.com</span>
+        <span>Updated: 2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>中文</h2>
+      <div class="callout">
+        <strong>联系支持：</strong> 如需帮助、反馈问题或提出建议，请发送邮件至
+        <a href="mailto:casual2464@163.com">casual2464@163.com</a>。
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>支持范围</h3>
+          <ul>
+            <li>应用安装或启动异常</li>
+            <li>地图标记、编辑与删除问题</li>
+            <li>照片、视频、录音无法添加或显示</li>
+            <li>iCloud 同步或内购功能异常</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>联系时建议附带</h3>
+          <ul>
+            <li>设备型号和 iOS 版本</li>
+            <li>问题发生时的操作步骤</li>
+            <li>是否稳定复现</li>
+            <li>相关截图或录屏（如方便）</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>常见问题</h3>
+      <p><strong>1. 为什么我看不到 iCloud 同步？</strong></p>
+      <p>iCloud 同步功能可能依赖应用版本、系统设置以及相关功能是否已启用。请先确认设备已登录 Apple ID，且 iCloud 可用。</p>
+
+      <p><strong>2. 为什么照片、视频或录音无法使用？</strong></p>
+      <p>请检查系统是否已授予 PinMap 对照片、麦克风等权限的访问。如果之前拒绝过权限，可前往 iOS 的“设置”中重新开启。</p>
+
+      <p><strong>3. 内购未解锁或恢复失败怎么办？</strong></p>
+      <p>请确认当前 Apple ID 与购买账号一致，并尝试在应用内执行“恢复购买”。如问题仍存在，请通过邮件联系支持。</p>
+
+      <p><strong>4. 如何反馈 bug 或功能建议？</strong></p>
+      <p>请直接发送邮件到 <a href="mailto:casual2464@163.com">casual2464@163.com</a>，并尽量附上复现步骤与截图。</p>
+    </section>
+
+    <section class="section">
+      <h2>English</h2>
+      <div class="callout">
+        <strong>Contact support:</strong> For help, bug reports, or product feedback, email
+        <a href="mailto:casual2464@163.com">casual2464@163.com</a>.
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Support topics</h3>
+          <ul>
+            <li>App install or launch issues</li>
+            <li>Pin creation, editing, or deletion problems</li>
+            <li>Photos, videos, or audio attachments not working</li>
+            <li>iCloud sync or in-app purchase issues</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Helpful details to include</h3>
+          <ul>
+            <li>Device model and iOS version</li>
+            <li>Steps to reproduce the issue</li>
+            <li>Whether the issue happens consistently</li>
+            <li>Screenshots or screen recordings if available</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Frequently asked questions</h3>
+      <p><strong>1. Why is iCloud sync unavailable?</strong></p>
+      <p>Please confirm that your device is signed in to Apple ID and that iCloud is available on the device. Some functionality may also depend on app version or feature availability.</p>
+
+      <p><strong>2. Why can't I add photos, videos, or audio?</strong></p>
+      <p>Please check whether PinMap has the required system permissions, such as Photos or Microphone access. If permission was denied earlier, you can re-enable it in iOS Settings.</p>
+
+      <p><strong>3. What should I do if an in-app purchase doesn't unlock?</strong></p>
+      <p>Make sure you're using the same Apple ID that completed the purchase, then try the Restore Purchases option in the app. If the issue persists, contact support by email.</p>
+
+      <p><strong>4. How can I report a bug or request a feature?</strong></p>
+      <p>Email <a href="mailto:casual2464@163.com">casual2464@163.com</a> with steps to reproduce, screenshots, and any other relevant details.</p>
+    </section>
+
+    <p class="footer">
+      PinMap Support · <a href="mailto:casual2464@163.com">casual2464@163.com</a>
+    </p>
+  </main>
+</body>
+</html>
